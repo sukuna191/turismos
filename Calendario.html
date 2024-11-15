@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Calendarior</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #75bc75;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: lightgray;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .excursion {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+        .excursion:last-child {
+            border-bottom: none;
+        }
+        .excursion img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .excursion h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .excursion p {
+            margin: 5px 0;
+        }
+        .price {
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+ <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3 text-light" href="#">TripSV</a>
+
+
+      <div class="d-flex">
+        <a class="nav-link text-light" href="https://www.x.com" target="_blank">
+          <i class="bi bi-twitter-x icon-large"></i>
+        </a>
+        <a class="nav-link text-light" href="https://www.facebook.com" target="_blank">
+          <i class="bi bi-facebook icon-large"></i>
+        </a>
+        <a class="nav-link text-light" href="https://www.youtube.com" target="_blank">
+          <i class="bi bi-youtube icon-large"></i>
+        </a>
+        <a class="nav-link text-light" href="https://www.instagram.com" target="_blank">
+          <i class="bi bi-instagram icon-large"></i>
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="index.html#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Acercade.html">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Creadores.html">Creadores</a>
+          </li>
+          <li class="nav-item"> <a class="nav-link text-light" href="SitiosImportantes.html">Sitios Importantes</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Mas información
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="Calendario.html">Calendario</a></li>
+              <li><a class="dropdown-item" href="experiencias.html">Experiencias</a></li>
+              <li><a class="dropdown-item" href="Promociones/Promociones.html">Promociones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br>
+<header>
+    <h1>Calendarización de Próximos Viajes y Excursiones en El Salvador</h1>
+</header>
+
+<div class="container">
+    <div class="excursion">
+        <img src="img/8.jpg" alt="Volcán de Izalco">
+        <div>
+            <a href="VolcanIzalco.html"><h2>Excursión a Volcán de Izalco</h2></a>
+            <p><strong>Fecha:</strong> 15 de octubre de 2024</p>
+            <p><strong>Descripción:</strong> Disfruta de un recorrido por los senderos del Volcan de Izalco y sumergete en la maravillosa vista desde las alturas.</p>
+            <p><strong>Precio:</strong> <span class="price">$25.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/24.jpg" alt="Volcán de Santa Ana">
+        <div>
+            <a href="VolcanSantaAna.html"><h2>Viaje al Volcán de Santa Ana</h2></a>
+            <p><strong>Fecha:</strong> 28 de octubre de 2024</p>
+            <p><strong>Descripción:</strong> Aventura a uno de los volcanes más impresionantes de El Salvador. La caminata te llevará hasta la cima, desde donde podrás disfrutar de vistas espectaculares del cráter y el Lago de Coatepeque.</p>
+            <p><strong>Precio:</strong> <span class="price">$30.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/16.jpg" alt="Playa El Tunco">
+        <div>
+            <a href="TourElTunco.html"><h2>Tour a la Playa El Tunco</h2></a>
+            <p><strong>Fecha:</strong> 5 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> Relájate en las playas más famosas para el surf en El Salvador. Sol, arena y olas garantizadas, además de una excelente comida en restaurantes locales.</p>
+            <p><strong>Precio:</strong> <span class="price">$20.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/59.jpg" alt="Lago de Coatepeque">
+        <div>
+            <h2>Excursión al Lago de Coatepeque</h2>
+            <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> Pasa un día inolvidable en las aguas cristalinas del Lago de Coatepeque. Ideal para nadar, practicar kayak y disfrutar de la naturaleza.</p>
+            <p><strong>Precio:</strong> <span class="price">$35.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/34.jpg" alt="Puerta del Diablo">
+        <div>
+            <h2>Tour a la Puerta del Diablo</h2>
+            <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> Comparte con familia y amigos de este lugar en el que vivirás una experiencia inolvidable.</p>
+            <p><strong>Precio:</strong> <span class="price">$35.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/42.jpg" alt="Centro Historico">
+        <div>
+            <h2>Tour al Centro Historico de San Salvador</h2>
+            <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> Sumergete en la historia que caracteriza el centro Histórico de San Salvador, con vistas arquitectónicas maravillas en donde podrás pasar con familia y amigos.</p>
+            <p><strong>Precio:</strong> <span class="price">$35.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/27.jpg" alt="Catedral">
+        <div>
+            <h2>Viaje a la Catedral de Santa Ana</h2>
+            <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> Situado en la Ciudad Morena, visita este lugar mágico con su arquitectura gótica.</p>
+            <p><strong>Precio:</strong> <span class="price">$35.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/38.jpg" alt="Salvador del Mundo">
+        <div>
+            <h2>Excursión a el Salvador del Mundo</h2>
+            <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> La ciudad siempre es un lugar para visitar, con un nuevo estilo, visita a El Salvador del Mundo, te llevarás unas fotos únicas.</p>
+            <p><strong>Precio:</strong> <span class="price">$35.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/6.jpg" alt="El Imposible">
+        <div>
+            <h2>Excursión a el Bosque Imposible</h2>
+            <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> Si te encanta la naturaleza, entonces este es el lugar definitivo para ti, con sus frondosos árboles, frescura y gastronomía..</p>
+            <p><strong>Precio:</strong> <span class="price">$35.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/14.jpg" alt="BINAES">
+        <div>
+            <h2>Excursión al La Biblioteca BINAES</h2>
+            <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> Disfruta de una de las bibliotecas mas modernas de Centro America, donde hay mucho por aprender y descubrir, definitivamente una excelente experiencia.</p>
+            <p><strong>Precio:</strong> <span class="price">$35.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/39.jpg" alt="Cerro Eramon">
+        <div>
+            <h2>Excursión al Cerro Eramon</h2>
+            <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> Si te gusta hacer hicking, esta es tu oportunidad que no puedes desaprovechar, el Cerro Eramon es uno de los destinos turísticos mas emblematicos de El Salvador.</p>
+            <p><strong>Precio:</strong> <span class="price">$35.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/conchagua.jpg" alt="Conchagua">
+        <div>
+            <h2>Excursión a Conchagua</h2>
+            <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> Pasa un día inolvidable Conchagua, ideal para compartir y disfrutar con la familia de la naturaleza.</p>
+            <p><strong>Precio:</strong> <span class="price">$35.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/surfcity.jpg" alt="Surfcity">
+        <div>
+            <h2>Excursión a Surf City</h2>
+            <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> Si eres amante de surf, este es un destino que no te puedes perder, disfrutarás mucho de las olas.</p>
+            <p><strong>Precio:</strong> <span class="price">$35.00</span> por persona</p>
+        </div>
+    </div>
+
+    <div class="excursion">
+        <img src="img/suchitoto.jpg" alt="Suchitoto">
+        <div>
+            <h2>Excursión a Suchitoto</h2>
+            <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+            <p><strong>Descripción:</strong> Un pueblo con mucha cultura y una gastronomía exquisita, sin hablar de sus varios destinos turisticos dentro de ella, la pasarás muy bien.</p>
+            <p><strong>Precio:</strong> <span class="price">$35.00</span> por persona</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer-->
+  <footer>
+
+    <div class="bg-dark text-center" style="margin-bottom: -20px; padding: 5px 0; position: relative;">
+      <a href="https://x.com" target="_blank" class="text-decoration-none mx-3"
+        style="color: white; font-size: 1.8rem;">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+      <a href="https://facebook.com" target="_blank" class="text-decoration-none mx-3"
+        style="color: white; font-size: 1.8rem;">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://youtube.com" target="_blank" class="text-decoration-none mx-3"
+        style="color: white; font-size: 1.8rem;">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="text-decoration-none mx-3"
+        style="color: white; font-size: 1.8rem;">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+
+    <div class="container-fluid bg-dark text-light p-3 text-center">
+      <div class="row">
+        <div class="col">
+          <a href="#" class="text-decoration-none text-light">
+            <h4>TURISMO DE EL SALVADOR</h4>
+            <i class="bi bi-c-circle"></i> Todos los derechos reservados 2024
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
